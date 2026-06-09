@@ -11,9 +11,7 @@ load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
 
 # Create a ChatGroq instance
-router_llm = ChatGroq(
-    model="llama-3.3-70b-versatile", api_key=groq_api_key, temperature=0
-)
+router_llm = ChatGroq(model="llama-3.3-70b-versatile", api_key=groq_api_key)
 
 
 # Define structured output schema for the classifier
